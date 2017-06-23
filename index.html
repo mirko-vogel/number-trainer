@@ -1,0 +1,40 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mahara Number Trainer</title>
+    <meta charset="utf-8">
+    <!-- Viewport Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- JavaScript: placed at the end of the document so the pages load faster -->
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+
+    <!-- Tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<script src="js/responsivevoice.js"></script>
+	<script src="js/number-trainer.js"></script>
+  	<script type="text/javascript">
+  		
+  	</script>
+  
+  </head>
+  <body>
+
+    <!-- YOUR CONTENT GOES HERE  -->
+    <div class="container">
+
+		<button type="button" class="btn btn-primary" onclick="number_speller.start();">Run</button>
+		<button type="button" class="btn btn-primary" onclick="number_speller.stop();">Stop</button>
+		<input pattern= "[0-9]" id="min_num" value="1">
+		<input pattern= "[0-9]" id="max_num" value="2020">
+		<input pattern= "[0-9]" id="delay" value="1"><br>
+  </body>
+</html>
