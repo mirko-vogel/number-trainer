@@ -1,40 +1,102 @@
-<!-- DOCTYPE -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Mahara Number Trainer</title>
-    <meta charset="utf-8">
-    <!-- Viewport Meta Tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<head>
+		<title> تمرين الترجمة التعاقبية للأرقام (موسدة) </title>
+		<meta charset="utf-8">
+		<!-- Viewport Meta Tag -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- JavaScript: placed at the end of the document so the pages load faster -->
-    <!-- jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <!-- Tether -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<!-- Optional theme -->
 
-	<script src="js/responsivevoice.js"></script>
-	<script src="js/number-trainer.js"></script>
-  	<script type="text/javascript">
-  		
-  	</script>
-  
-  </head>
-  <body>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- YOUR CONTENT GOES HERE  -->
-    <div class="container">
+		<script src="js/number-trainer.js"></script>
 
-		<button type="button" class="btn btn-primary" onclick="number_speller.start();">Run</button>
-		<button type="button" class="btn btn-primary" onclick="number_speller.stop();">Stop</button>
-		<input pattern= "[0-9]" id="min_num" value="1">
-		<input pattern= "[0-9]" id="max_num" value="2020">
-		<input pattern= "[0-9]" id="delay" value="1"><br>
-  </body>
+		<script type="text/javascript"></script>
+
+		<style type="text/css">
+			.right-to-left li {
+				float: right;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<!-- YOUR CONTENT GOES HERE  -->
+		<div class="container" dir="rtl">
+			<div class="page-header">
+				<h1> تمرين الترجمة التعاقبية للأرقام <small>موسدة</small></h1>
+			</div>
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs right-to-left" id="nav-tabs" role="tablist">
+				<li role="presentation" class="active">
+					<a href="#numbers" aria-controls="numbers" role="tab" data-toggle="tab">أرقام</a>
+				</li>
+				<li role="presentation" class="disabled">
+					<a href="#dates" aria-controls="profile" role="tab" data-toggle="tab">تواريخ</a>
+				</li>
+				<li role="presentation">
+					<a href="#about" aria-controls="about" role="tab" data-toggle="tab">عن هذا التطبيق</a>
+				</li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="numbers">
+					<p>
+						يلا جربوا!
+					</p>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="min_num">الحد الأدنى</label>
+							<div class="col-sm-10">
+								<input type="number" class="form-control" id="min_num" value="1">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="max_num">الحد الأعلى</label>
+							<div class="col-sm-10">
+								<input type="number" class="form-control" id="max_num" value="2000">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="max_num">وقفة</label>
+							<div class="col-sm-10">
+								<input type="number" class="form-control" id="delay" value="1">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="button" class="btn btn-primary btn-lg" onclick="number_speller.start();">
+									<span class="glyphicon glyphicon-play"></span>
+								</button>
+								<button type="button" class="btn btn-lg" onclick="number_speller.stop();">
+									<span class="glyphicon glyphicon-stop"></span>
+								</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div role="tabpanel" class="tab-pane" id="dates">
+					...
+				</div>
+				<div role="tabpanel" class="tab-pane" id="about">
+					<p>
+						.من مجموعة مهارة للترجمة والترجمة الفورية
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</body>
 </html>
